@@ -1,0 +1,7 @@
+Coalesce(
+    gblScreenSize.Width,
+    Max(
+        App.Width,
+        App.MinScreenWidth
+    )
+)
