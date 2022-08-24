@@ -1,0 +1,7 @@
+If(// The selected screen size height is not blank
+    IsBlank(gblScreenSize.Height),
+    // Then disable rotating
+    DisplayMode.Disabled,
+    // Else allow rotating
+    DisplayMode.Edit
+)
