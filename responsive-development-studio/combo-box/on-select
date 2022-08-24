@@ -1,0 +1,42 @@
+
+Table(
+    {
+        DisplayName: "Responsive"
+    },
+    {
+        DisplayName: "Small",
+        ScreenSize: ScreenSize.Small,
+        Width: Index(
+            App.SizeBreakpoints,
+            1
+        ).Value
+    },
+    {
+        DisplayName: "Medium",
+        ScreenSize: ScreenSize.Medium,
+        Width: Index(
+            App.SizeBreakpoints,
+            2
+        ).Value
+    },
+    {
+        DisplayName: "Large",
+        ScreenSize: ScreenSize.Large,
+        Width: Index(
+            App.SizeBreakpoints,
+            3
+        ).Value
+    },
+    {
+        DisplayName: "Samsung Galaxy S8+",
+        ScreenSize: ScreenSize.Small,
+        Width: 360,
+        Height: 740
+    },
+    {
+        DisplayName: "iPhone SE",
+        ScreenSize: ScreenSize.Small,
+        Width: 375,
+        Height: 667
+    }
+)
