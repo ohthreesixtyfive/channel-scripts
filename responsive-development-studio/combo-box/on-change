@@ -1,0 +1,4 @@
+Set(
+    gblScreenSize,
+    Self.Selected
+);
