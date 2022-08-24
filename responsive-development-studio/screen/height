@@ -1,0 +1,7 @@
+Coalesce(
+    gblScreenSize.Height,
+    Max(
+        App.Height,
+        App.MinScreenHeight
+    )
+)
