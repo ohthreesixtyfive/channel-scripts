@@ -1,0 +1,16 @@
+Set(
+    gblScreenSize,
+    If(// We haven't rotated the selection
+        gblScreenSize.Width = fldScreenSize.Selected.Width,
+        Patch(// Then rotate the selection
+            gblScreenSize,
+            {
+                Width: fldScreenSize.Selected.Height,
+                Height: fldScreenSize.Selected.Width,
+                ScreenSize: ScreenSize.Medium
+            }
+        ),
+        // Else we need to rotate it back to the original width/height
+        fldScreenSize.Selected
+    )
+);
